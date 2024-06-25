@@ -46,3 +46,26 @@ html {
   color: white;
   text-align: left;
 }
+
+/*What I added*/
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 100px 1fr 100px;
+  gap: 15px;
+}
+
+.header{
+  grid-column: 1 / 3;
+}
+
+.sidebar {
+  grid-column: 1;
+  grid-row: 2 / 4;
+}
+
+.footer {
+  grid-column: 1 / 3;
+  grid-row: 4;
+}
+
